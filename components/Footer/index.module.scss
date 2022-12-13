@@ -40,18 +40,11 @@
 }
 
 .call {
-    background-color: rgb(210 2 2 / 70%);
-    padding: 7px;
-    box-sizing: content-box;
-    border-radius: 50%;
-    color: white;
     position: fixed;
     z-index: 55;
     bottom: 5px;
     right: 5px;
-    width: 24px;
-    height: 24px;
-    &:hover {
-        background-color: rgb(255 10 10);
+    & img {
+        width: 50px;
     }
 }

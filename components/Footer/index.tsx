@@ -3,7 +3,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import PhoneIcon from '@mui/icons-material/Phone';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
-import Link from 'next/link';
+import call from '../../images/call.gif';
 
 const Footer = () => {
   return (
@@ -76,7 +76,10 @@ const Footer = () => {
         rel="noopener noreferrer"
         href="tel:+381677070417"
       >
-        <PhoneIcon fontSize="medium" />
+        <picture>
+          <source srcSet={call.src} />
+          <img src={call.src} alt="call" />
+        </picture>
       </a>
     </footer>
   );
