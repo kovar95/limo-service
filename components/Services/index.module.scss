@@ -1,0 +1,52 @@
+.services {
+    display: flex;
+    padding: 30px 100px;
+    background-color: #000000;
+    color: #eecaca;
+    &:last-of-type {
+        background: url("../../images/background2.png");
+        background-size: cover;
+        background-color: #a52a2a;
+        & > .inner >p {
+            color: #ffffff !important;
+        }
+    }
+    & > .inner {
+        width: 50%;
+        padding: 20px;
+        & > h2 {
+            font-size: 3rem;
+        }
+        & > hr {
+            width: 50%;
+            margin-left: 0;
+            border: 1px solid #872626;
+            background-color: #ff0000;
+        }
+        & > p {
+            font-size: 1.5rem;
+            color: #ffffff;
+        }
+    }
+}
+
+.gray {
+    font-size: 1rem !important;
+    color: #897f7f !important;
+}
+
+@media (max-width: 700px) {
+    .services {
+      flex-direction: column;
+      padding: 30px 50px;
+      & > .inner {
+        width: 100%;
+        & > h2 {
+            font-size: 2rem;
+        }
+        & > p {
+            font-size: 1rem;
+        }
+    }
+    }
+  }

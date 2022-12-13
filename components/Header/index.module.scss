@@ -1,0 +1,27 @@
+.header {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #231f20;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0.5px 0.5px 11px 0.5px #ffffff78;
+    opacity: 0.6;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.navigation {
+    color: #ffffff;
+    text-shadow: 0.5px 0.5px 0.5px black;
+    a {
+        margin: 6px;
+        &:hover {
+            color: rgb(194, 194, 194);
+        }
+    }
+}
